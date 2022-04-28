@@ -13,10 +13,10 @@ spec:
         image: avida:local
         resources:
           requests:
-            memory: "130Mi"
+            memory: "200Mi"
             cpu: "300m"
           limits:
-            memory: "150Mi"
+            memory: "300Mi"
             cpu: "500m"
         command:
         - /bin/bash
