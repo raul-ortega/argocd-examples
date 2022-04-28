@@ -4,8 +4,8 @@ metadata:
   name: avida-job
 spec:
   completionMode: Indexed
-  parallelism: 4
-  completions: 4
+  parallelism: 5
+  completions: 5
   template:
     spec:
       containers:
