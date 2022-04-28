@@ -6,7 +6,7 @@ metadata:
 spec:
   source:
     path: avida
-    repoURL: https://github.com/raul-ortega/argocd-example.git
+    repoURL: https://github.com/raul-ortega/argocd-examples.git
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
