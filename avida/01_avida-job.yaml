@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: avida-job
+spec:
+  completionMode: Indexed
+  parallelism: 4
+  completions: 4
+  template:
+    spec:
+      containers:
+      - name: avida
+        image: avida:local
+        command:
+        - /bin/bash
+        - -exc
+        - |
+          cd /avida
+          ./run-avida.txt
+      restartPolicy: Never
+  backoffLimit: 4
