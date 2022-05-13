@@ -3,7 +3,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: raul-avida-experiment-3
+  name: raul-experiments
 
 ---
 
@@ -13,7 +13,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: nfs-csi
-  namespace: raul-avida-experiment-3
+  namespace: raul-experiments
 provisioner: nfs.csi.k8s.io
 parameters:
   server: 192.168.0.175
@@ -32,7 +32,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: avida-pv-claim
-  namespace: raul-avida-experiment-3
+  namespace: raul-experiments
 spec:
   storageClassName: nfs-csi
   accessModes:
@@ -48,8 +48,8 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: avida-job
-  namespace: raul-avida-experiment-3
+  name: avida-experiment-3-job
+  namespace: raul-experiments
 spec:
   completionMode: Indexed
   parallelism: 2
