@@ -7,4 +7,4 @@ kubectl apply -f https://raw.githubusercontent.com/raul-ortega/argocd-examples/m
 
 ## launch from job template
 
-kubectl apply -f https://raw.githubusercontent.com/raul-ortega/argocd-examples/main/avida/2/avida.yaml
+kubectl apply -f https://raw.githubusercontent.com/raul-ortega/argocd-examples/main/avida/2/avida-job.yaml
