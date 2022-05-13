@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: avida
+  name: avida-experiment-3
   namespace: argocd
 spec:
   source:
