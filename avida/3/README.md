@@ -1,4 +1,4 @@
-# Persistent Volume Claim (PVC) introduced
+# namespaces introduced
 
 ## launch from argocd template
 
