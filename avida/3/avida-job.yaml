@@ -1,3 +1,10 @@
+# Define Namespace
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: raul-avida-experiments
+  
 ---
 
 # Define Storage Class
@@ -36,7 +43,7 @@ spec:
 
 ---
 
-# Define job
+# Define Job
 
 apiVersion: batch/v1
 kind: Job
