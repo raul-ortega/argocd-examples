@@ -1,9 +1,19 @@
+# Define namespace
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: raul-avida-experiments
+
+---
+
 # Define Storage Class
 
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: nfs-csi
+  namespace: raul-avida-experiments
 provisioner: nfs.csi.k8s.io
 parameters:
   server: 192.168.0.175
@@ -42,7 +52,6 @@ metadata:
   namespace: raul-avida-experiments
 spec:
   completionMode: Indexed
-  namespace: raul-avida-experiments
   parallelism: 2
   completions: 2
   template:
