@@ -22,7 +22,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: avida-pv-claim
-  namespace: avida-experiments
+  namespace: raul-avida-experiments
 spec:
   storageClassName: nfs-csi
   accessModes:
@@ -39,7 +39,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: avida-job
-  namespace: avida-experiments
+  namespace: raul-avida-experiments
 spec:
   completionMode: Indexed
   namespace: avida-experiments
